@@ -1,14 +1,15 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: './src/index.html',
+    template: './index.html',
     filename: 'index.html',
     inject: 'body'
 })
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './index.js',
     output: {
         path: path.resolve('dist'),
         filename: 'index_bundle.js'
@@ -19,7 +20,10 @@ module.exports = {
             { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
         ]
     },
-    plugins: [HtmlWebpackPluginConfig]
+    plugins: [
+        HtmlWebpackPluginConfig,
+        new webpack.optimize.UglifyJsPlugin()
+    ]
 }
 
 
