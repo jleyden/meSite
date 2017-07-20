@@ -1,0 +1,13 @@
+{
+  "name": "meSite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jleyden/meSite.git",
+  "author": "John Leyden <johnjl712@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "path": "^0.12.7",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
