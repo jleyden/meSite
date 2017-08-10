@@ -1,39 +1,44 @@
 import React from 'react';
 import { Toolbar, ToolbarGroup } from 'material-ui/Toolbar';
 import FlatButton from 'material-ui/FlatButton'
+import FloatingActionButton from 'material-ui/FloatingActionButton';
 
 import portraitURL from './portrait.jpeg';
 
+const toolBarStyle = {
+    'background-color': '#00796B',
+    height: '80px'
+}
+// hi
+const groupStyle = {
+    height: '100%',
+    margin: 'auto'
+}
+
+const buttonStyle = {
+    height: '100%',
+    margin: '0 0 0 0',
+    color: 'white'
+}
+
+const imgStyle = {
+    width: '100%',
+    height: '100%',
+}
+// hi
 export default class NavBar extends React.Component {
-    componentWillMount() {
-        this.toolBarStyle = {
-            'background-color': '#00796B',
-            height: '80px'
-        }
-        this.groupStyle = {
-            height: '100%',
-            margin: 'auto'
-        }
-        this.buttonStyle = {
-            height: '100%',
-            margin: '0 0 0 0',
-            color: '#ECEFF1'
-        }
-        this.centerStyle = {
-            height: '100%',
-            margin: '0 0 0 0',
-        }
-    }
 
     render() {
         return (
-            <Toolbar style={this.toolBarStyle}>
-                <ToolbarGroup style={this.groupStyle}>
-                    <FlatButton style={this.buttonStyle}>Projects</FlatButton>
-                    <FlatButton style={this.buttonStyle}>Blog</FlatButton>
-                    <image src="./portrait.jpeg" alt="myface" width='50px'/>
-                    <FlatButton style={this.buttonStyle}>About</FlatButton>
-                    <FlatButton style={this.buttonStyle}>Contact</FlatButton>
+            <Toolbar style={ toolBarStyle }>
+                <ToolbarGroup style={ groupStyle }>
+                    <FlatButton style={ buttonStyle }>Projects</FlatButton>
+                    <FlatButton style={ buttonStyle }>Blog</FlatButton>
+                    <FloatingActionButton>
+                        <img src={ portraitURL } style={ imgStyle }/>
+                    </FloatingActionButton>
+                    <FlatButton style={ buttonStyle }>About</FlatButton>
+                    <FlatButton style={ buttonStyle }>Contact</FlatButton>
                 </ToolbarGroup>
             </Toolbar>);
     }
