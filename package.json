@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --inline --content-base . --history-api-fallback",
-    "build": "webpack --optimize-minimize --env=prod --progress --profile --colors"
+    "build": "webpack --optimize-minimize"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
