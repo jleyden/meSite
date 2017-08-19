@@ -6,11 +6,6 @@ import { Link } from 'react-router-dom'
 
 import portraitURL from './portrait.jpeg';
 
-const toolBarStyle = {
-    'background-color': '#00796B',
-    height: '80px'
-}
-// hi
 const groupStyle = {
     height: '100%',
     margin: 'auto'
@@ -29,9 +24,17 @@ const imgStyle = {
 
 export default class NavBar extends React.Component {
 
+	constructor(props) {
+		super(props)
+		this.toolBarStyle = {
+			'background-color': '#00796B',
+			height: this.props.data.navBarHeight
+		}
+	}
+
     render() {
         return (
-            <Toolbar style={ toolBarStyle }>
+            <Toolbar style={ this.toolBarStyle }>
                 <ToolbarGroup style={ groupStyle }>
                     <Link to="/projects" height="100%">
                         <FlatButton style={ buttonStyle }>Projects</FlatButton>

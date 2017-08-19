@@ -1704,6 +1704,10 @@ eventemitter3@1.x.x:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-1.2.0.tgz#1c86991d816ad1e504750e73874224ecf3bec508"
 
+eventlistener@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/eventlistener/-/eventlistener-0.0.1.tgz#ed2baabb852227af2bcf889152c72c63ca532eb8"
+
 events@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
@@ -3750,6 +3754,12 @@ react-dom@^15.6.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
+
+react-element-pan@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-element-pan/-/react-element-pan-1.0.9.tgz#eb97d3397e8eca75e5b1f061397a2346c2e01edb"
+  dependencies:
+    eventlistener "0.0.1"
 
 react-event-listener@^0.4.5:
   version "0.4.5"
