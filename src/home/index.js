@@ -15,8 +15,9 @@ export default class Home extends React.Component {
 			left: '50%',
 			'margin-right': '-50%',
 			transform: 'translate(-50%, -50%)',
-			width: '45%',
-			textAlign: 'center'
+			width: '55%',
+			textAlign: 'center',
+			padding: 0
 		}
 		console.log(height)
 		return (
@@ -24,15 +25,21 @@ export default class Home extends React.Component {
 				<div>
 					<img src={ lakePano } height={height + 120}/>
 					<div style={centerBoxStyle}>
-						<h1 style={{color: 'white', fontFamily: 'Helvetica', fontSize: '350%'}}>
-							Hi, I'm John
-						</h1>
-						<h3 style={{color: 'white', fontFamily: 'Helvetica', fontSize: '150%'}}>
-							I study Computer Science and Conservation & Resource Studies at U.C. Berkeley.
-							I am interested in applying data science and
-							human-computer interaction towards challenges in environmental sustainability.
-							Welcome to my site!
-						</h3>
+						<svg>
+								<rect style={{fill: 'black', fillOpacity: 0.4, width: '100%', height: '100%'}}/>
+								<text style={{zIndex: 10001}}>hello</text>
+								<div>
+									<h1 style={{color: 'white', fontFamily: 'Helvetica', fontSize: '350%'}}>
+										Hi, I'm John
+									</h1>
+									<h3 style={{color: 'white', fontFamily: 'Helvetica', fontSize: '150%'}}>
+										I study Computer Science and Conservation & Resource Studies at U.C. Berkeley.
+										I am interested in applying data science and
+										human-computer interaction towards challenges in environmental sustainability.
+										Welcome to my site!
+									</h3>
+								</div>
+						</svg>
 					</div>
 				</div>
 			</ElementPan>
