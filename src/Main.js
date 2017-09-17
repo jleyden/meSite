@@ -46,7 +46,8 @@ function withDimensions(WrappedComponent) {
 		    windowHeight: window.innerHeight,
 		    windowWidth: window.innerWidth,
 		    navBarHeight: NAV_BAR_HEIGHT,
-        contentHeight: window.innerHeight - NAV_BAR_HEIGHT
+        contentHeight: window.innerHeight - NAV_BAR_HEIGHT,
+        contentWidth: window.innerWidth
 	    }
     }
 
