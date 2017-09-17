@@ -1,7 +1,6 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
-import createBrowserHistory from 'history/createBrowserHistory'
 
 import NavBar from './NavBar.js';
 import Home from './home'
