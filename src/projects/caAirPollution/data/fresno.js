@@ -1,5 +1,6 @@
-export default frenso =
-	[
+export default function getData() {
+	return (
+		[
 			{
 				"YEAR": 2012,
 				"AREA": "FRESNO COUNTY",
@@ -1137,3 +1138,5 @@ export default frenso =
 				"NH3": 0
 			}
 		]
+	)
+}

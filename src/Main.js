@@ -22,7 +22,7 @@ export default class Main extends React.Component {
   render() {
     return (
       <MuiThemeProvider style = {{Margin: 0}}>
-        <Router history={createBrowserHistory()}>
+        <Router>
           <div>
             <Route path="/" component={withDimensions(NavBar)}/>
             <div>
