@@ -24,10 +24,13 @@ export default class Home extends React.Component {
 				<div>
 					<img src={ lakePano } height={height + 120}/>
 					<div style={centerBoxStyle}>
-						<h1 style={{color: 'white', fontFamily: 'Helvetica', fontSize: '350%'}}>
+						<h1 style={{color: 'white', fontFamily: 'Helvetica', fontSize: '350%',
+							backgroundColor: 'rgba(0,0,0,0.25)', boxShadow: '0 0 27px 10px rgba(0, 0, 0, 0.3)'}}>
 							Hi, I'm John
 						</h1>
-						<h3 style={{color: 'white', fontFamily: 'Helvetica', fontSize: '150%'}}>
+						<h3 style={
+							{color: 'white', fontFamily: 'Helvetica', fontSize: '150%',
+								backgroundColor: 'rgba(0,0,0,0.25)', boxShadow: '0 0 27px 10px rgba(0, 0, 0, 0.5)'}}>
 							I study Computer Science and Conservation & Resource Studies at U.C. Berkeley.
 							I am interested in applying data science and
 							human-computer interaction towards challenges in environmental sustainability.

@@ -4,7 +4,8 @@ import { List, ListItem } from 'material-ui/List';
 import caAirPollution from './caAirPollution'
 
 const listItemStyle = {
-	color: 'white'
+	color: 'white',
+	textAlign: 'center'
 }
 
 const HOVER_COLOR = '#80CBC4'
@@ -21,6 +22,9 @@ export default class Projects extends React.Component {
 		console.log(this.props.history)
 		return (
 			<List>
+				<ListItem style={listItemStyle} hoverColor={HOVER_COLOR}
+				          primaryText='JOUL'
+				          onClick={() => this.pushProject('joul')}/>
 				<ListItem style={listItemStyle} hoverColor={HOVER_COLOR}
 				          primaryText='California Air Pollution'
 					        onClick={() => this.pushProject('ca-air-pollution')}/>
