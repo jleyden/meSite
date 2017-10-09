@@ -10,8 +10,9 @@ import About from './about'
 import Contact from './contact'
 import Projects from './projects'
 import caAirPollution from './projects/caAirPollution'
+import Joul from './projects/joul'
 
-const NAV_BAR_HEIGHT = 80
+const NAV_BAR_HEIGHT = 50
 
 export default class Main extends React.Component {
   componentWillMount() {
@@ -29,6 +30,7 @@ export default class Main extends React.Component {
               <Route exact path="/" component={withDimensions(Home)}/>
               <Route exact path="/projects" component={withDimensions(Projects)}/>
               <Route exact path="/ca-air-pollution" component={withDimensions(caAirPollution)}/>
+              <Route exact path="/joul" component={withDimensions(Joul)}/>
               <Route path="/blog" component={withDimensions(Blog)}/>
               <Route path="/about" component={withDimensions(About)}/>
               <Route path="/contact" component={withDimensions(Contact)}/>
