@@ -29,6 +29,9 @@ export default class Projects extends React.Component {
 				          primaryText='California Air Pollution'
 					        onClick={() => this.pushProject('ca-air-pollution')}/>
 				<ListItem style={listItemStyle} hoverColor={HOVER_COLOR}
+				          primaryText='E-Mission'
+				          onClick={() => this.pushProject('e-mission')}/>
+				<ListItem style={listItemStyle} hoverColor={HOVER_COLOR}
 				          primaryText='Photos'/>
 				<ListItem style={listItemStyle} hoverColor={HOVER_COLOR}
 				          primaryText='Videos'/>
