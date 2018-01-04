@@ -34,13 +34,14 @@ export default class Overlay extends React.Component {
 
 	static get defaultViewport() {
 		return {
-			longitude: -46.6480565,
-			latitude: -23.5655504,
-			zoom: 9,
+			altitude: 1.5,
+			longitude: -46.70618384138379,
+			latitude: -23.52732355026779,
+			zoom: 11.826314796915543,
 			minZoom: 5,
 			maxZoom: 15,
-			pitch: 40.5,
-			bearing: -27.396674584323023
+			pitch: 54.04503115104478,
+			bearing: -28.099799584323023
 		};
 	}
 
